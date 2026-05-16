@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethiopia - Cradle of Civilization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --green: #006400;
+      --yellow: #FDD835;
+      --red: #DA121A;
+      --gold: #D4AF37;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #0f0f0f;
+    }
+    
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
+                  url('https://source.unsplash.com/random/1920x1080/?ethiopia,landscape,lalibela') center/cover fixed;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    
+    .hero-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .profile-pic {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 8px solid var(--gold);
+      margin: 0 auto 25px;
+      object-fit: cover;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+    }
+    
+    h1 {
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      margin-bottom: 15px;
+      text-shadow: 0 10px 30px rgba(0,0,0,0.9);
+    }
+    
+    .subtitle {
+      font-size: 2rem;
+      color: var(--yellow);
+      margin-bottom: 30px;
+    }
+    
+    .btn {
+      background: var(--yellow);
+      color: #000;
+      padding: 18px 55px;
+      border-radius: 50px;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-block;
+      margin: 12px;
+      font-size: 1.3rem;
+      transition: 0.4s;
+    }
+    
+    .btn:hover {
+      transform: translateY(-10px) scale(1.08);
+    }
+    
+    section {
+      padding: 120px 5%;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 70px;
+      color: var(--green);
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 30px;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+      transition: 0.5s;
+    }
+    
+    .card:hover {
+      transform: translateY(-20px);
+    }
+    
+    .card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://via.placeholder.com/240" alt="Bethelhem Habtamu" class="profile-pic">
+      <h1>Ethiopia</h1>
+      <p class="subtitle">Cradle of Humanity • Land of Origins • Ancient Glory</p>
+      <p style="font-size:1.5rem; max-width:750px; margin:0 auto 40px;">
+        Welcome to the land of kings, coffee, and incredible cultural heritage
+      </p>
+      <a href="#culture" class="btn">Explore Ethiopian Culture</a>
+    </div>
+  </section>
+
+  <section id="culture">
+    <h2>Rich Ethiopian Culture</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/random/800x500/?ethiopia,coffee,ceremony" alt="Coffee Ceremony">
+        <div style="padding:25px;">
+          <h3>☕ Coffee Ceremony</h3>
+          <p>The soul of Ethiopian hospitality. A beautiful ritual of roasting, brewing, and sharing coffee three times.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/random/800x500/?habesha,kemis" alt="Traditional Dress">
+        <div style="padding:25px;">
+          <h3>👗 Habesha Kemise</h3>
+          <p>Elegant traditional clothing worn during festivals and special occasions.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/random/800x500/?lalibela,church" alt="Lalibela">
+        <div style="padding:25px;">
+          <h3>⛪ Rock-Hewn Churches</h3>
+          <p>The incredible churches of Lalibela, carved from solid rock — a UNESCO World Heritage site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#f8f1e9;">
+    <h2>Our Treasures</h2>
+    <div class="grid">
+      <div class="card">
+        <div style="padding:30px;">
+          <h3>🍲 Ethiopian Cuisine</h3>
+          <p>Injera with colorful wat stews, tibs, kitfo, and more — a feast for the senses.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div style="padding:30px;">
+          <h3>🎵 Music & Dance</h3>
+          <p>Rich rhythms, traditional azmari singers, and vibrant eskista dance.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div style="padding:30px;">
+          <h3>🏔️ Timeless Landscapes</h3>
+          <p>From the Simien Mountains to the Danakil Depression — one of the most diverse landscapes on Earth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" style="background:var(--brown); color:white; text-align:center; padding:100px 20px;">
+    <h2 style="color:var(--warm);">Connect With Us</h2>
+    <p style="font-size:1.6rem; margin:30px 0;">
+      <strong>Bethelhem Habtamu</strong><br><br>
+      📧 Bethelhemhabtamu675100@gmail.com
+    </p>
+    <p style="margin-top:40px; opacity:0.9;">
+      Proudly Sharing the Beauty of Ethiopian Culture with the World 🇪🇹
+    </p>
+  </footer>
+
+</body>
+</html>
